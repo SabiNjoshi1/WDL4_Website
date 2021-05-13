@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sabin Joshi</title>
+	<meta charset="utf-8" />
+	<meta property="og:title" content="HomePage - Sabin Joshi - Portfolio" />
+	<link rel="stylesheet" type="text/css" href="aboutme.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	
+	<section id="pageA">
+		<div class="main">
+			<img src="image/16.jpeg" alt="picture-of-phone" />
+		</div>
+
+		<div id="myNav">
+			<a class="close" onclick="closeNav()">&times; Close</a>
+			<div class="contain">
+				<a href="#">Home</a>
+				<a href="bio.html">Bio</a>
+				<a href="index.html">TWS_Home</a>
+				<a href="exercise.html">Exercise</a>
+			</div>
+		</div>
+
+		<span class="menu" onclick="openNav()">&#9776; Menu</span>
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">&#916;</button>
+
+		<div class="new">
+			<div class="info">
+				<h4>Hello. My Name is </h4>
+				<h2>Sabin</h2>
+				<h2>Joshi</h2>
+				<p>Studing BSC(Hons) Computing @ The British College, Thapathali, Kathmandu</p>
+				<a href="#pageB">&#8711; Portfolio &#8711;</a>
+			</div>
+
+			<div class="photo">
+				<img src="image/14.jpeg" alt="pic-of-man" />
+			</div>
+		</div>
+	</section>
+	
+	<section id="pageB">
+		<div class="sub-main">
+			<img src="image/15.jpeg" alt="pic-of-man" />
+			<div class="bio">
+				<a href="bio.html">READ MORE</a>
+			</div>
+		</div>
+		<div class="sub-main1">
+			<h2>About Me</h2>
+			<h3>Sabin Joshi</h3>
+			<h6>Studing BSC(Hons) Computing @ The British College, Thapathali, Kathmandu</h6>
+			<p>Hi, Everyone</p>
+			<p>Hello! My name is Sabin Joshi, I am currently studying at The British College, Thapathali, Kathmandu.</p>
+			<h6>I have a passion for creating beautiful and functional Web Page. I design to create a better and more effective experience.</h6>
+			<h6>Click On Read More For Bio</h6>
+		</div>
+	</section>
+
+	<section id="pageC">
+		<div class="footer"></div>
+		<div class="footer1">
+			<h2>Social Media</h2>
+				<a href="https://www.facebook.com/sabin.joshi.524" target="_blank" class="fa fa-facebook"></a>
+				<a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.instagram.com/__sabinjoshi__/" target="_blank" class="fa fa-instagram"></a>
+				<a href="mailto:sabinjoshi044@gmail.com" target="_blank" class="fa fa-google"></a>
+				<a href="https://www.pinterest.com/sabinjoshi044/boards/" target="_blank" class="fa fa-pinterest"></a>
+		</div>
+		<div class="footer2"></div>
+	</section>
+
+	<div class="last">
+		<h3>Privacy Policy | Terms & Conditions | Security & Safety | &#169; 2020. All Right Reserved</h3>
+	</div>
+
+	<script>
+		function openNav() {
+		  document.getElementById("myNav").style.width = "20%";
+		}
+
+		function closeNav() {
+		  document.getElementById("myNav").style.width = "0%";
+		}
+	
+
+		//top button
+		//Get the button
+		var mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trek With Sabin</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="topnav">
+		<div class="topnav1">
+			<img src="image/13.png" alt="picture-of-man-with-mountain" width="160" height="80" />
+		</div>
+		<div class="topnav2">
+			<input type="text" placeholder="Search.." />
+			<p>CONTACT US ON:</p>
+			<h5>+977 9821000000 (Call, WhatsApp, Viber)| Mail Us</h5>
+		</div> 
+	</div>
+
+	<div class="navbar">
+		<div class="navbar1">
+			<a href="exercise.html">Exercise</a>
+			<a href="aboutme.html">About Me</a>
+			<a href="contact.html">Contact</a>	
+			<a href="blog.html">Blog</a>
+			<a class="active" href="#home">Home</a>	
+		</div>								  
+	</div>
+
+	<div class="body">
+	  <img class="slides" src="image/1.jpg" alt="picture-of-mountain" />
+	  <img class="slides" src="image/8.jpg" alt="picture-of-stupa" />
+	  <img class="slides" src="image/6.jpg" alt="picture-of-forest-and-man" />
+	  <img class="slides" src="image/9.jpg" alt="paragliding" />
+	  <img class="slides" src="image/10.jpg" alt="picture-of-man-trek" />
+	  
+	  <div class="content">
+    	<h1>TREK WITH SABIN</h1>
+    	<p>With eight of the top ten highest summits in the world and some of the most beautiful landscapes which are only reachable on foot, trekking in Nepal is one of the unique experiences of Asia.</p>
+  	  </div>
+	</div>
+
+	<div class="body1">
+		<div class="inner">
+			<h2>holiday finder</h2>
+			<p>for your next trip</p>
+		</div>
+		<div class="box">
+			<select class="place">
+					<option disabled="disabled" selected="selected">DESTINATION</option>
+					<option>KATHMANDU</option>
+					<option>POKHARA</option>
+					<option>CHITWAN</option>
+					<option>EVEREST BASE CAMP TREK</option>
+					<option>ANNAPURNA CIRCUIT WITH TILICHO LAKE TREK</option>
+					<option>MANY MORE...</option>
+			</select>	
+		</div>
+
+		<div class="box">
+			<select class="place">
+					<option disabled="disabled" selected="selected">DURATION</option>
+					<option>1 TO 5</option>
+					<option>6 TO 10</option>
+					<option>11 TO 15</option>
+					<option>15 TO 20</option>
+					<option>25 TO 30</option>
+					<option> >30</option>
+			</select>	
+		</div>
+
+		<div class="search">
+			<button type="SUBMIT" class="green">SEARCH</button>
+		</div>
+	</div>
+
+	<div class="text">
+		<a href="trek.html"><p>Our Best  Trek Offer</p></a>
+	</div>
+
+	 <div class="row">
+  		<div class="column1">
+  			<a href="about.html"><p>About Trek With Sabin</p></a>
+  		</div>
+
+  		<div class="column2">
+  			<a href="faqs.html"><p>FAQs</p></a>
+  		</div>
+	</div>
+
+	<div class="test">
+		<h4>Get In Touch</h4>
+		<p>Post Box:10001 | Thapathali, Kathmandu, Nepal | Tel: +977 400000 | Mobile: +977 9821000000 | Email: trekwithsabin@gmail.com</p>
+	</div>
+
+	<div class="footer">
+		<div class="footer1">
+			<h4>Follow US In</h4>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-pinterest"></a>
+		</div>
+
+		<div class="footer2">
+			<h3>Privacy Policy | Terms & Conditions | Security & Safety | &#169; 2020 Trek With Sabin PVT.LTD</h3>
+			<p>All contents and photographs within this website is &#169; by Trek With Sabin and may not be reproduced without our permission. </p>
+		</div>
+	</div>
+
+<script>
+var index = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  index++;
+  if (index > x.length) {index = 1}    
+  x[index-1].style.display = "block";  
+  setTimeout(carousel, 3000); 
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+  margin: 0; 
+  padding: 0; 
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+}
+
+.navbar a {
+  float: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 13px;
+  color: #fff;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+.body{
+  background: #00539F;
+  height: auto;
+}
+
+.first {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  line-height: 40px;
+}
+
+.first h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+
+.first img {
+  display: block;
+  margin: 0 auto;
+}
+
+.first p, li {
+  font-size: 15px;    
+  letter-spacing: 1px;
+}

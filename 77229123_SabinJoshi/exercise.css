@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Aerial;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  margin-bottom: 2px;
+}
+
+.navbar a{
+  float: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 13px;
+  color: white;
+  
+}
+
+.navbar a:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+.navbar1{
+  margin-right: 40px;
+}
+
+.sun{
+  width: 150px;
+  background: orange;
+  color: black;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  left: 150px;
+  margin: 2px;
+  padding: 3px;
+  box-shadow: 0px 0px 16px red;
+  animation-name: sunrise;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+.move{
+  width: 100%;
+  height: 150px;
+}
+
+.move1 img{
+  position: absolute;
+  width: 150px;
+  height: 100px;
+  margin: 2px;
+  padding: 3px;
+}
+
+.move2 img{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 87%;
+  margin: 2px;
+  padding: 3px;
+}
+
+ @keyframes sunrise{
+  from{}
+  to{
+    left: 75%;
+    transform: scale(0.8);
+    background: #e98c16;
+  }
+}
+
+.main{
+  width: 80%;
+  margin: 5%;
+  padding: 5%;
+  text-align: justify;
+}
+
+.main1{
+  width: 100%;
+  height: 100px;
+  line-height: 99px;
+  margin: 2px;
+  padding: 5px;
+  font-size: 25px;
+  background: #14b5eb;
+  border: solid 1px #14b5eb;
+  text-align: center;
+}
+
+.main1 a{
+  color: white;
+  text-decoration: none;
+}
+
+.main1 a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.main2{
+  width: 100%;
+  height: 100px;
+  line-height: 99px;
+  margin: 2px;
+  padding: 5px;
+  font-size: 25px;
+  background:  #1ee1b2;
+  border: solid 1px  #1ee1b2;
+  text-align: center;
+}
+
+.main2 a{
+  color: white;
+  text-decoration: none;
+}
+
+.main2 a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*.main3{
+  width: 100%;
+  height: 100px;
+  line-height: 99px;
+  margin: 2px;
+  padding: 5px;
+  font-size: 25px;
+  background: #2ed14d;
+  border: solid 1px #2ed14d;
+  text-align: center;
+}
+
+.main3 a{
+  color: white;
+}
+
+.main3 a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}*/

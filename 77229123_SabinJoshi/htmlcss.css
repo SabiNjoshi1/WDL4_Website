@@ -1,0 +1,430 @@
+* {
+  margin: 0; 
+  padding: 0; 
+  font-family: Aerial;
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+  position: fixed;
+}
+
+.navbar a {
+  float: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 13px;
+  color: #fff;
+  
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+section {
+  width: 100%; 
+  height: 735px;
+}
+
+#pageA {
+  background: #d69c61;
+}
+
+.first {
+  width: 100%;
+  padding-top: 80px;
+}
+
+.first1 h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.first2 {
+  width: 100%
+}
+
+.first2 form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #fff;
+  border-radius: 1em;
+}
+
+.first2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.first2 form li + li {
+  margin-top: 1em;
+}
+
+.first2 label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+.first2 input, 
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+
+.first2 input:focus, 
+textarea:focus {
+  border-color: #000;
+}
+
+.first2 textarea {
+  vertical-align: top;
+
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px; 
+}
+
+.first2 button {
+  margin-left: .5em;
+}
+
+.first2 p{
+	padding: 3px;
+}
+
+.first2 fieldset{
+	width: 74%;
+	margin-left: 24%;
+}
+
+.first2 input[type="radio"]{
+ 	width: 150px;
+ }
+
+#pageB {
+  background: #d6cf61;
+}
+
+#pageC {
+  background: #a8d661;
+}
+
+.fii{
+  margin: 0 auto;
+  width: 450px;
+  padding: 1em;
+  border: 1px solid #fff;
+  border-radius: 1em;
+}
+
+.first3 h3{
+	color: white;
+	font-size: 18px;
+	height: 35px;
+	line-height: 35px;
+	margin-bottom: 0;
+	width: 430px;
+
+}
+
+.first3 h3 span:first-child{
+	background-color: hsl(0, 100%, 75%);
+	height: 35px;
+	padding-left: 10px;
+	margin-left: 0;
+	margin-right: 0;
+	line-height: 35px;
+	float: left;
+	padding-right: 60px;
+}
+
+.first3 h3 span:last-child{
+	width: 0;
+	height:	0;
+	float: left;
+	border-top: solid 17.7px transparent;
+	border-bottom: solid 17.7px hsl(0, 100%, 75%);
+	border-left: solid 17.7px hsl(0, 100%, 75%);
+	border-right: solid 17.7px transparent;
+}
+
+.first3 form{
+	padding: 20px;
+	margin-top: 0px;
+	width: 400px;
+}
+
+.first3 label{
+	width: 30%;
+	display: inline-block;
+}
+
+.first3  input{
+ 	width: 60%;
+ 	height: 25px;
+ 	display: inline-block;
+ 	margin-bottom: 10px;
+ 	border-radius: 10px;
+ 	border: solid 0px #fff;
+ }
+
+ .first3 input[type="radio"]{
+ 	width: 40px;
+ }
+
+.first3  button{
+ 	width: 45%;
+ 	display: inline-block;
+ 	height: 40px;
+ 	line-height: 38px;
+ 	border-radius: 10px;
+ 	border: solid 1px #fff;
+ }
+
+ .orange{
+ 	background: orange;
+ }
+
+ .green{
+ 	background: green;
+ }
+
+ .first3 button:hover{
+ 	color: white;
+ 	cursor: pointer;
+ }
+
+#pageD {
+	background: #61d6a3;
+}
+
+.college{
+	width: 100%;
+}
+
+.college h1{
+	width: 100%;
+	line-height: 50px;
+	text-align: center;
+	font-family: Comic Sans MS;
+	color: white;
+}
+
+.college2{
+	width: 100%;
+}
+
+.college2 h3{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+	font-family: Comic Sans MS;
+}
+
+.sep{
+	width: 48%;
+	padding: 1%;
+	float: left;
+}
+
+.sep p{
+  color: white;
+  font-family: Comic Sans MS;
+}
+
+.sep ul{
+  list-style-type: square;
+  color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.sep ol{
+  list-style-type: none;
+  color: white;
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.sep1{
+	width: 23%;
+	padding: 1%;
+	float: left;
+}
+
+.sep1 ul{
+	list-style-type: square;
+	color: white;
+	padding-left: 30px;
+	text-decoration: underline;
+}
+
+.sep1 a{
+	color: white;
+}
+
+.sep2{
+	width: 23%;
+	padding: 1%;
+	float: left;
+}
+
+.sep2 a{
+	text-decoration: none;
+}
+
+.sep2 p{
+  margin: 0 auto;
+  width: 100px;
+  padding: 1em;
+  border: 1px solid #fff;
+  border-radius: 1em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+  font-family: Comic Sans MS;
+}
+
+.college2 footer {
+  clear: both;
+  text-align: center;
+}
+
+.first .college, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+#pageE{
+	background: #1ecbe1;
+}
+
+.first6{
+	width: 100%;
+}
+
+.main-head {
+  grid-area: header;
+  background: #fff;
+  text-align: center;
+  font-size: 30px;
+  height: 100px;
+  line-height: 98px;
+  border: solid 1px #000;
+}
+.content {
+  grid-area: content;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  border: solid 1px #000;
+}
+.main-nav {
+  grid-area: nav;
+  background: #fff;
+  text-align: center;
+  font-size: 20px;
+  border: solid 1px #000;
+
+}
+.side {
+  grid-area: sidebar;
+  background: #fff;
+  text-align: center;
+  font-size: 18px;
+  height: 100px;
+  line-height: 98px;
+  border: solid 1px #000;
+}
+.ad {
+  grid-area: ad;
+  background: #fff;
+  text-align: center;
+  font-size: 30px;
+  height: 100px;
+  line-height: 98px;
+  border: solid 1px #000;
+}
+.main-footer {
+  grid-area: footer;
+  background: #fff;
+  text-align: center;
+  font-size: 30px;
+  height: 100px;
+  line-height: 98px;
+  border: solid 1px #000;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "content"
+    "sidebar"
+    "ad"
+    "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "nav     nav"
+      "sidebar content"
+      "ad      footer";
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+#pageF{
+  background: #00539F;
+  height: auto;
+}
+
+.first7 {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+  line-height: 40px;
+}
+
+.first7 h2 {
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;    
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;
+}
+
+.first7 img {
+  display: block;
+  margin: 0 auto;
+}
+
+.fseven p, li {
+  font-size: 15px;    
+  letter-spacing: 1px;
+}

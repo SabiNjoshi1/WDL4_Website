@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Trek With Sabin</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="contact.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+	<div class="topnav">
+		<div class="topnav1">
+			<img src="image/13.png" alt="picture-of-man-with-mountain" width="160" height="80" />
+		</div>
+		<div class="topnav2">
+			<input type="text" placeholder="Search.." />
+			<p>CONTACT US ON:</p>
+			<h5>+977 9821000000 (Call, WhatsApp, Viber)| Mail Us</h5>
+		</div> 
+	</div>
+
+	<div class="navbar">
+		<div class="navbar1">
+			<a href="exercise.html">Exercise</a>
+			<a href="aboutme.html">About Me</a>
+			<a class="active" href="#contact">Contact</a>	
+			<a href="blog.html">Blog</a>
+			<a href="index.html">Home</a>	
+		</div>								  
+	</div>
+
+	<div class="contain">CONTACT</div>
+
+	<div class="main">
+		<div class="main1">
+			<h4>Trek With Sabin Pvt.Ltd.</h4>
+			<p>
+				<strong>Address:</strong>
+				Trade Tower, Thapathali, Kathmandu, Nepal
+			</p>
+			<p>
+				<strong>Phone:</strong>
+				+977 400000
+			</p>
+			<p>
+				<strong>Mobile:</strong>
+				+977 9821000000
+			</p>
+			<p>
+				<strong>Email:</strong>
+				trekwithsabin@gmail.com
+			</p>
+			<p>
+				<strong>Website:</strong>
+				www.trekwithsabin.com
+			</p>
+		</div>
+
+		<div class="main2">
+			<h4>For Enquiry</h4>
+			<form name="myForm" action="/test/" method="POST" onsubmit="return validateForm()">
+				<label for="name">Name:</label>
+				<input type="text" id="name" />
+					
+				<label for="email">Email:</label>
+				<input type="email" id="email" />
+					
+				<label for="number">DOB:</label>
+				<input type="number" id="digit"/>
+
+				<label for="number">Mobile No:</label>
+				<input type="number" id="number" />
+
+				<label id="gender">Gender:</label>
+				<input type="radio" name="Gender" id="Male" />Male
+				<input type="radio" name="Gender"  id="Female" />Female
+				<input type="radio" name="Gender" id="Other" />Other
+
+				<label for="msg">Message:</label>
+    			<textarea id="msg" name="user_message"></textarea>
+
+				<button type="submit" value="submit" class="orange">SUBMIT</button>	
+			</form>
+			
+		</div>
+
+	</div>
+
+	<div class="test">
+		<h4>Get In Touch</h4>
+		<p>Post Box:10001 | Thapathali, Kathmandu, Nepal | Tel: +977 400000 | Mobile: +977 9821000000 | Email: trekwithsabin@gmail.com</p>
+	</div>
+
+	<div class="footer">
+		<div class="footer1">
+			<h4>Follow US In</h4>
+			<a href="#" class="fa fa-facebook"></a>
+			<a href="#" class="fa fa-twitter"></a>
+			<a href="#" class="fa fa-instagram"></a>
+			<a href="#" class="fa fa-google"></a>
+			<a href="#" class="fa fa-pinterest"></a>
+		</div>
+
+		<div class="footer2">
+			<h3>Privacy Policy | Terms & Conditions | Security & Safety | &#169; 2020 Trek With Sabin PVT.LTD</h3>
+			<p>All contents and photographs within this website is &#169; by Trek With Sabin and may not be reproduced without our permission. </p>
+		</div>
+	</div>
+
+	<script>
+		function validateForm() {
+  			var x = document.forms["myForm"]["name","email","dob","gender","number","msg"].value;
+  			if (x == "") {
+    		alert("Details must be filled out");
+    		return false;
+  			}
+		}
+	</script>
+
+
+</body>
+</html>

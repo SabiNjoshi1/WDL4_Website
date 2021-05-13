@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JAVASCRIPT_Rock Paper Scissors</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="game.css" />
+</head>
+<body>
+
+	<div id="pageC">
+		<div class="navbar">
+			<a href="exercise.html">Exercise</a>	
+			<a href="img.html">Image Gallery</a>
+			<a href="sillystore.html">Silly Store</a>
+			<a href="#game">Game</a>
+			<a href="Guessinggame.html">Guessing Game</a>
+			<a href="shoppinglist.html">Dom - App</a>										  
+		</div>
+
+		<div class="first">
+			<div class="first1">
+				<h2>Lab Exercise - Rock Paper Scissors </h2>
+			</div>
+
+			<div class="first2">
+				<h1>Welcome to Rock Paper Scissors Game. GOOD LUCK</h1>
+				<p>Rock: 1  |  Paper: 2  | Scissors: 3</p>
+				<input type="text" id="userin" placeholder="Enter your choice: " />
+				<button id="btn" onclick="play()">PLAY</button>
+				<div id="output"></div>
+				<div id="result"></div>
+
+			</div>
+		</div>
+
+	</div>
+
+	
+
+<script>
+
+//function below to decide what was thrown
+function whatToSay(input){
+		if(input == 1){
+			return(" threw Rock");
+		}
+		else if(input == 2){
+			return(" threw Paper");
+		}
+		else{
+			return(" threw Scissors");
+		}
+}
+
+//function below to decide win loss or draw
+function decide(num1, num2){
+	var resultarea = document.getElementById('result');
+	if(num1 == num2){
+		resultarea.className = "draw";
+		resultarea.innerHTML = "Bummer, That was a draw !!";
+	}
+	else if(num1 == 1 && num2 == 3){
+		resultarea.className = "win";
+		resultarea.innerHTML = "Congrats, You Just won !!";
+	}
+	else if(num1 == 2 && num2 == 1){
+		resultarea.className = "win";
+		resultarea.innerHTML = "Congrats, You Just won !!";
+	}
+	else if(num1 == 3 && num2 == 2){
+		resultarea.className = "win";
+		resultarea.innerHTML = "Congrats, You Just won !!";
+	}
+	else{
+		resultarea.className = "lost";
+		resultarea.innerHTML = "Sadly, You Just Lost !!";
+	}
+}
+
+//function to start the game
+function play(){
+	var userinput = document.getElementById('userin').value;
+	if(userinput == ''){
+		alert('Please enter a choice: 1, 2 or 3');
+	}
+	if(userinput != 1 & userinput != 2 & userinput != 3){
+		alert('This entry is not valid, Please enter a choice: 1, 2 or 3');
+	}
+	else
+	{
+		var outputarea = document.getElementById('output');
+		outputarea.innerHTML = "You" + whatToSay(userinput);
+	}
+	var compin = Math.round(Math.random() * 2 + 1);
+	outputarea.innerHTML += " Computer" + whatToSay(compin);
+	decide(userinput, compin);
+}
+
+</script>
+</body>
+</html>

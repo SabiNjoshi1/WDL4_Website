@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>JAVASCRIPT_Shopping List</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="shoppinglist.css" />
+</head>
+<body>
+
+	<div id="pageA">
+	<div class="navbar">
+		<a href="exercise.html">Exercise</a>	
+		<a href="img.html">Image Gallery</a>
+		<a href="sillystore.html">Silly Store</a>
+		<a href="game.html">Game</a>
+		<a href="Guessinggame.html">Guessing Game</a>
+		<a href="#shoppinglist">Dom - App</a>										  
+	</div>
+
+	<div class="first">
+		<div class="first1">
+			<h2>Lab Exercise - Dom - App(Shopping List)</h2>
+		</div>
+
+		<div class="first2">
+			<div class="shop">
+				<h2>Our Shopping List</h2>
+				
+				 <input type="text" />
+				 
+				 <button onclick="addToList();">Add List</button>
+
+	 			<ul></ul>
+ 			</div>
+		</div>
+
+	</div>
+	</div>
+
+
+	<script>
+	 	const userin = document.querySelector('input');
+	 	const btn = document.querySelector('button');
+	 	const shoplist= document.querySelector('ul');
+	 	userin.focus();
+
+	 	function addToList(){
+	 		var item = userin.value;
+	 		userin.value = '';
+	 		//alert(item);
+
+	 		const liItem = document.createElement('li');
+	 		const btnspan = document.createElement('span');
+	 		const everyBtn = document.createElement('button');
+
+	 		liItem.textContent = item;
+	 		everyBtn.textContent = "Delete";
+	 		everyBtn.style.margin = "10px";
+
+	 		btnspan.appendChild(everyBtn);
+	 		liItem.appendChild(btnspan);
+	 		shoplist.appendChild(liItem);
+
+	 		// everyBtn.setAttribute('onclick','this.parentNode.parentNode.remove();');
+
+	 		everyBtn.onclick = function(){
+	 			this.parentNode.parentNode.remove();
+	 		}
+	 		userin.focus();
+	 	}
+	</script>
+
+</body>
+</html>

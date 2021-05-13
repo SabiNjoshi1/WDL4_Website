@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>HTML AND CSS</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="htmlcss.css" />
+</head>
+<body>
+	
+	<div class="navbar">
+		<a href="exercise.html">Exercise</a>
+		<a href="wildlife.html">Accessibility</a>
+		<a href="test.html">Test Site</a>  	
+		<a href="#pageE">Layout</a>		
+		<a href="#pageD">School</a>
+		<a href="#pageC">HTML5 Form</a>
+		<a href="#pageB">Structure Form</a>
+		<a href="#pageA">First Form</a>										  
+	</div>
+
+	<section id="pageA">
+	<div class="first">
+		<div class="first1">
+			<h2>Lab Exercise - First Form</h2>
+		</div>
+
+		<div class="first2">
+			<form action="/my-handling-form-page" method="post">
+ 				<ul>
+ 					<li>
+    					<label for="name">Name:</label>
+   						<input type="text" id="name" name="user_name">
+  					</li>
+  					<li>
+    					<label for="mail">E-mail:</label>
+    					<input type="email" id="mail" name="user_email">
+  					</li>
+  					<li>
+    					<label for="msg">Message:</label>
+    					<textarea id="msg" name="user_message"></textarea>
+  					</li>
+  					<li class="button">
+  						<button type="submit">Send your message</button>
+					</li>
+ 				</ul>
+			</form>
+		</div>
+
+	</div>
+	</section>
+
+
+	<section id="pageB">
+	<div class="first">
+		<div class="first1">
+			<h2>Lab Exercise - Structure Form</h2>
+		</div>
+
+		<div class="first2">
+			<form>
+ 				<h1>Payment form</h1>
+				<p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+
+    				<h2>Contact information</h2>
+   					<fieldset>
+      					<legend>Title</legend>
+      					<input type="radio" name="title" id="title_1" value="A" />Ace
+						<input type="radio" name="title" id="title_2" value="K"/>King
+						<input type="radio" name="title" id="title_3" value="Q"/>Queen
+    				</fieldset>
+
+    				<p>
+      					<label for="name">
+      						<span>Name: </span>
+      						<strong><abbr title="required">*</abbr></strong>
+      					</label>
+      					<input type="text" id="name1" name="username">
+    				</p>
+
+    				<p>
+    					<label for="mail">
+    						<span>E-mail: </span>
+    						<strong><abbr title="required">*</abbr></strong>
+    					</label>
+    					<input type="email" id="mail1" name="usermail">
+    				</p>
+
+    				<p>
+      					<label for="pwd">
+      						<span>Password: </span>
+      						<strong><abbr title="required">*</abbr></strong>
+      					</label>
+      					<input type="password" id="pwd" name="password">
+    				</p>
+				
+				    <h2>Payment information</h2>
+				    <p>
+				      <label for="card">
+				      	<span>Card type:</span>
+				      </label>
+				      <select id="card" name="usercard">
+				        <option value="visa">Visa</option>
+				        <option value="mc">Mastercard</option>
+				        <option value="amex">American Express</option>
+				      </select>
+				    </p>
+
+				    <p>
+				      <label for="number">
+				        <span>Card number:</span>
+				        <strong><abbr title="required">*</abbr></strong>
+				      </label>
+				      <input type="tel" id="number" name="cardnumber">
+				    </p>
+
+				    <p>
+				      <label for="number">
+				      	<span>Expiration date:</span>
+				        <strong><abbr title="required">*</abbr></strong>
+				        <em>formatted as mm/dd/yyyy</em>
+				      </label>
+				      <input type="number" id="number3" name="expiration">
+				    </p>
+
+				    <p> <button type="submit">Validate the payment</button> </p>
+
+			</form>
+		</div>
+
+	</div>
+	</section>
+
+
+	<section id="pageC">
+		<div class="first">
+			<div class="first1">
+				<h2>Lab Exercise - HTML5 Form</h2>
+			</div>
+
+			<div class="first3">
+				<div class="fii">
+					<h3>
+						<span>HTML5 Form</span> 
+						<span></span>
+					</h3>
+					<form action="/test/" method="POST">
+						<label for="name">Name:</label>
+						<input type="text" id="name3" />
+							
+						<label for="email">Email:</label>
+						<input type="email" id="email" />
+							
+						<label for="pass">Password:</label>
+						<input type="password" id="pass" />
+							
+						<label>Age:</label>
+						<input type="number" />
+							
+						<label>DOB:</label>
+						<input type="number" id="number2" />
+
+						<label>Gender:</label>
+						<input type="radio" name="Gender" id="Male" />Male
+						<input type="radio" name="Gender"  id="Female" />Female
+						<input type="radio" name="Gender" id="Other" />Other
+
+						<button type="SUBMIT" class="orange">SUBMIT</button>
+						<button type="RESET" class="green">RESET</button>	
+					</form>
+				</div>
+			</div>
+
+		</div>
+		
+	</section>
+
+
+	<section id="pageD">
+		<div class="first">
+				<div class="college">
+					<h1>St Huxley's Community College</h1>
+				</div>
+				<div class="college2">
+					<div class="sep">
+						<h3>Brave a new world</h3>
+						<p>It's a brave new world out there. Our children are being put in increasing more competitive situatuons, both during recreation, and as they start to move into the adult worls of <a href="#">examinations</a> , <a href="#">jobs</a>, <a href="#">careers</a>, and other life choices. Having the wrong mindset.becoming too emotional, or making the wrong choices can contribute to them experiencing difficulty in taking theri rightful place in today's ideal society. </p>
+						<p>As concered parents, guardians or carers, you will no doubts want to give your children the best possible start in life - and you've come to the right place.</p>
+						<h3>The best start in life</h3>
+						<p>At St. Huxley's we pride ourselves in not only giving our students a top quality education, but also giving the societal and emotional intelligence they need to win big in the coming utopia. We not inly excel at subjects such as gentics, data minig, and chemistry, but we also include compulsory lessons in:</p>
+						<ul>
+							<li>Emotional control</li>
+							<li>Judgement</li>
+							<li>Assertion</li>
+							<li>Focus and resolve</li>
+						</ul>
+						<p>If you are intrested, then you next step will likely be to:</p>
+						<ol>
+					        <li>a. <a href="#">Call us</a> for more information</li>
+					        <li>b. <a href="#">Ask for a brochure</a>, which includes signup form</li>
+					        <li>c. <a href="#">Book a visit</a>!</li>
+					      </ol>
+					</div>
+
+					<div class="sep1">
+						<h3>Top course choices</h3>	
+						<ul>
+							<li><a href="#">Genetic engneering</a></li>
+							<li><a href="#">Genetic mutation</a></li>
+							<li><a href="#">Organic Chemistry</a></li>
+							<li><a href="#">Pharmaceuticals</a></li>
+							<li><a href="#">Biochemistry with behaviour</a></li>
+							<li><a href="#">Pure biochemistry</a></li>
+							<li><a href="#">Data mining</a></li>
+							<li><a href="#">Computer security</a></li>
+							<li><a href="#">Bioinformatics</a></li>
+							<li><a href="#">Cybernetics</a></li>
+						</ul>
+						<p><a href="#">see more</a></p>
+					</div>
+
+					<div class="sep2">
+						<a href="#"><p>Home</p></a>
+						<a href="#"><p>Finding us</p></a>
+						<a href="#"><p>Courses</p></a>
+						<a href="#"><p>Staff</p></a>
+						<a href="#"><p>Media</p></a>
+						<a href="#"><p>Propectus</p></a>
+					</div>
+					<footer>
+
+				    <p>&copy; 2016 St Huxley's Community College</p>
+
+				  </footer>
+				</div>
+
+		</div>
+	</section>
+
+
+	<section id="pageE">
+	<div class="first">
+		<div class="first1">
+			<h2>Lab Exercise - Layout</h2>
+		</div>
+
+		<div class="first6">
+			<div class="wrapper">
+		        <header class="main-head">The header</header>
+		        <nav class="main-nav">
+		            <ul>
+		                <li>Nav 1</li>
+		                <li>Nav 2</li>
+		                <li>Nav 3</li>
+		            </ul>
+		        </nav>
+		        <article class="content">
+		            <h2>Main article area</h2>
+		            <p>In this layout, we display the areas in source order for any screen less that 500 pixels wide. We go to a two column layout, and then to a three column layout by redefining the grid, and the placement of items on the grid.</p>
+		        </article> 
+		        <aside class="side">Sidebar</aside>
+		        <div class="ad">Advertising</div>
+		        <footer class="main-footer">The footer</footer>
+		</div>
+		</div>
+
+	</div>
+	</section>
+
+</body>
+</html>
